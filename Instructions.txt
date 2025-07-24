@@ -1,0 +1,30 @@
+
+BEGINNER REAL-TIME COLLABORATIVE EDITOR
+======================================
+
+Stack:
+- React (via CDN, no build tools)
+- Node.js + Express + Socket.IO
+- MongoDB (Mongoose)
+
+How to run:
+
+1) Install MongoDB and make sure it is running locally (mongodb://127.0.0.1:27017).
+   Or edit .env to your Atlas URI.
+
+2) Open terminal in the project folder and run:
+   npm install
+
+3) Start the server:
+   npm start
+
+4) Open your browser:
+   http://localhost:3000
+
+Open the same URL in two browser windows to see real-time collaboration.
+
+Files:
+- server.js        -> Node.js + Socket.IO + MongoDB logic
+- public/index.html -> React app (very simple, beginner-friendly)
+- .env             -> configure PORT and MONGO_URI here
+- package.json     -> dependencies + start script
